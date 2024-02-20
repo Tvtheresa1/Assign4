@@ -10,33 +10,45 @@
             margin: 0;
             padding: 0;
         }
-        header, footer {
-            color: #333;
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
             text-align: center;
             padding: 10px;
         }
-        .section {
+        nav a {
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
             padding: 20px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-    </header>
 
-    <div class="section">
-        <h2>About Me</h2>
-        <p>This is where you can write a brief introduction about yourself.</p>
-    </div>
+<header>
+    <h1>My Portfolio</h1>
+</header>
 
-    <div class="section">
-        <h2>Projects</h2>
-        <p>Display your portfolio of projects here.</p>
-    </div>
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#portfolio">Portfolio</a>
+</nav>
 
-    <footer>
-        <p>My Portfolio</p>
-    </footer>
+<section id="about">
+    <h2>About Me</h2>
+    <p>Insert your information about yourself here.</p>
+</section>
+
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Check out my portfolio <a href="link_to_your_portfolio">here</a>.</p>
+</section>
+
 </body>
 </html>
